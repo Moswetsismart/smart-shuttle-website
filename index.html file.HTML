@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Shuttle Transport Services</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f2f2f2; }
+    header { background-color: #004aad; color: white; padding: 20px 0; text-align: center; }
+    nav { background-color: #003580; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 20px; background-color: white; margin: 20px auto; width: 90%; max-width: 1000px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    footer { background-color: #003580; color: white; text-align: center; padding: 20px 0; }
+    .copy-btn, .submit-btn, .whatsapp-btn { background-color: #004aad; color: white; border: none; padding: 8px 16px; margin-top: 5px; cursor: pointer; border-radius: 5px; }
+    .copy-btn:hover, .submit-btn:hover, .whatsapp-btn:hover { background-color: #002f6c; }
+    form { display: flex; flex-direction: column; gap: 10px; }
+    input, select, textarea { padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+  </style>
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(function() {
+        alert("Copied to clipboard: " + text);
+      }, function(err) {
+        alert("Failed to copy: " + err);
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Smart Shuttle Transport Services</h1>
+    <p>Safe, Reliable & Affordable Transport and Logistics Solutions</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+    <a href="#payments">Payments</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Smart Shuttle is a transport company based in Gaborone, Botswana. We provide student transportation, airport shuttles, courier deliveries, and freight logistics. We aim to expand into tourism and cross-border transport services to serve a growing demand in the region.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Student Transport</li>
+      <li>Staff Shuttles</li>
+      <li>Airport Transfers</li>
+      <li>Courier Deliveries</li>
+      <li>Event Transport</li>
+      <li>Freight & Logistics</li>
+      <li>Travel & Tours (Coming Soon)</li>
+    </ul>
+  </section>
+
+  <section id="booking">
+    <h2>Book a Ride</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="pickup" placeholder="Pickup Location" required>
+      <input type="text" name="dropoff" placeholder="Drop-off Location" required>
+      <input type="date" name="date" required>
+      <select name="service">
+        <option value="">Select Service</option>
+        <option value="Student Transport">Student Transport</option>
+        <option value="Airport Transfer">Airport Transfer</option>
+        <option value="Courier Delivery">Courier Delivery</option>
+        <option value="Event Transport">Event Transport</option>
+        <option value="Staff Shuttle">Staff Shuttle</option>
+      </select>
+      <textarea name="message" rows="4" placeholder="Additional Details"></textarea>
+      <button type="submit" class="submit-btn">Submit Booking</button>
+    </form>
+    <p style="margin-top: 10px;">Or book instantly on WhatsApp:</p>
+    <a href="https://wa.me/26776178460" target="_blank">
+      <button class="whatsapp-btn">📱 Book via WhatsApp</button>
+    </a>
+  </section>
+
+  <section id="payments">
+    <h2>Payment Options</h2>
+    <p>We accept a variety of payment methods to make it easy for our clients to work with us:</p>
+    <h3>PayPal</h3>
+    <p><a href="https://paypal.me/Moswetsi" target="_blank">paypal.me/Moswetsi</a></p>
+    <button class="copy-btn" onclick="copyToClipboard('https://paypal.me/Moswetsi')">Copy PayPal Link</button>
+
+    <h3>Skrill</h3>
+    <p>Email: moswetsi2thabo@gmail.com</p>
+    <p>Customer ID: 171085485</p>
+    <button class="copy-btn" onclick="copyToClipboard('moswetsi2thabo@gmail.com')">Copy Skrill Email</button>
+    <button class="copy-btn" onclick="copyToClipboard('171085485')">Copy Skrill ID</button>
+
+    <h3>Bank Transfer</h3>
+    <p><strong>Bank Name:</strong> First National Bank (FNB)</p>
+    <p><strong>Branch:</strong> Broadhurst</p>
+    <p><strong>Branch Code:</strong> 283767</p>
+    <p><strong>Account Number:</strong> 62768999016</p>
+    <button class="copy-btn" onclick="copyToClipboard('62768999016')">Copy Account Number</button>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: thabo2moswetsi@gmail.com</p>
+    <p>Phone: +267 76178460</p>
+    <p>Location: Gaborone, Botswana</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Smart Shuttle Transport Services. All rights reserved.</p>
+  </footer>
+</body>
+</html>
